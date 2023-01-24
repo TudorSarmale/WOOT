@@ -1,0 +1,9 @@
+WOOT Dependencies:
+
+mysql
+requests
+youtube_dl
+praw
+gspread
+ffmpeg
+pynacl
