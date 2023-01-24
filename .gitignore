@@ -1,10 +1,6 @@
-
-*.log
 *.log
 *.ini
 src/bot.ini
 src/vadim.log
-src/bot.ini
 *.pyc
-*.pyc
-*.pyc
+
