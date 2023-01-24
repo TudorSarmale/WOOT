@@ -1,0 +1,2 @@
+# WOOT
+ WOOT Discord Bot
