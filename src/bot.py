@@ -14,7 +14,7 @@ config.read(configfile)
 
 handler = logging.FileHandler(filename=str(config['logging']['filename']), encoding=str(config['logging']['encoding']), mode=str(config['logging']['mode']))
 
-bot = commands.Bot(command_prefix = str(config['bot']['command_prefix']),intents=discord.Intents().all(), activity=discord.Activity(type=discord.ActivityType.playing, name="Running Vadim Dev Build"))
+bot = commands.Bot(command_prefix = str(config['bot']['command_prefix']),intents=discord.Intents().all(), activity=discord.Activity(type=discord.ActivityType.playing, name="Running WOOT Dev Build"))
 
 async def load_extensions():
     for filename in os.listdir("./cogs"):
@@ -29,5 +29,5 @@ class mybot(commands.Bot):
     
     
 
-bot = mybot(command_prefix = str(config['bot']['command_prefix']), intents=discord.Intents().all(), activity=discord.Activity(type=discord.ActivityType.playing, name="Running Vadim Dev Build"))
+bot = mybot(command_prefix = str(config['bot']['command_prefix']), intents=discord.Intents().all(), activity=discord.Activity(type=discord.ActivityType.playing, name="Running WOOT Dev Build"))
 bot.run(str(config['bot']['bot_token']),log_handler=handler)

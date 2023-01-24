@@ -26,7 +26,7 @@ class Reddit(commands.Cog):
     async def search_reddit(self,ctx,subreddit_name:str,post_cnt:int,sort:str):
         subreddit = reddit.subreddit(subreddit_name)
         embed =  discord.Embed (title="r/"+str(subreddit_name))
-        embed.set_footer(text="Data collected using PRAW by Vadim Bot#1840")
+        embed.set_footer(text="Data collected using PRAW by WOOT#4157")
         if str(sort)=="top":
             for submission in subreddit.top(limit=post_cnt):
                 embed.add_field(name = "Title", value= str(submission.title))
@@ -54,7 +54,7 @@ class Reddit(commands.Cog):
         embed.add_field(name="Locked?", value=str(submission.locked))
         embed.add_field(name="Spoiler?", value=str(submission.spoiler))
         embed.add_field(name="Link", value=str(submission.permalink))
-        embed.set_footer(text="Data collected using PRAW by Vadim Bot#1840")
+        embed.set_footer(text="Data collected using PRAW by WOOT#4157")
         await ctx.reply(embed=embed)
 
     @commands.command()
